@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie & TV Show Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 Movie & TV Show Finder</h1>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <section class="search-section">
+        <input type="text" id="searchInput" placeholder="Search for a movie or TV show...">
+        <button onclick="searchMovie()">🔍 Search</button>
+        <button onclick="startVoiceSearch()">🎤 Voice Search</button>
+        <button onclick="getRandomMovie()">Surprise Me!</button>
+    </section>
+
+    <section id="result" class="movies-container"></section>
+
+    
+
+    <section class="favorites-section">
+        <h2>❤️ Your Favorites</h2>
+        <ul id="favoritesList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

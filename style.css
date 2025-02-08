@@ -1,0 +1,269 @@
+/* 🌟 Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s ease-in-out;
+}
+
+/* 🎬 Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #ff6b6b;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* 🔍 Search Section */
+.search-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 12px;
+    width: 60%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border: 2px solid #ff6b6b;
+}
+
+/* 🎨 Buttons */
+button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+button:hover {
+    background: #ff3b3b;
+    transform: scale(1.08);
+    box-shadow: 0px 4px 25px rgba(255, 107, 107, 0.6);
+}
+
+/* 🎥 Movie Cards */
+#result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.movie {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s, box-shadow 0.4s;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* 🖼️ Movie Poster */
+.movie img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    object-fit: cover;
+    height: 350px;
+}
+
+.movie img:hover {
+    transform: scale(1.05);
+}
+
+/* 🎬 Trailer Player */
+.trailer-container {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.trailer-container iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ⭐ Movie Details */
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.movie p {
+    font-size: 14px;
+    color: #ddd;
+    margin: 5px 0;
+}
+
+/* 🎭 Streaming Platform Section */
+.streaming-platform {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+/* ⭐ IMDb Rating */
+.imdb-rating {
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* 💖 Add to Favorites Button */
+.favorites-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.favorites-container button {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #ff3b3b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.favorites-container button:hover {
+    background: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* ❤️ Favorites Section */
+#favoritesList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#favoritesList li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#favoritesList li:hover {
+    transform: scale(1.03);
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    background: linear-gradient(135deg, #121212, #1a1a1a);
+    color: white;
+    transition: background 0.5s ease-in-out;
+}
+
+.dark-mode header {
+    background: black;
+}
+
+.dark-mode button {
+    background: #6200ea;
+}
+
+.dark-mode button:hover {
+    background: #4500b5;
+}
+
+/* ✨ Responsive Design */
+@media (max-width: 1024px) {
+    .movie {
+        max-width: 260px;
+    }
+
+    .trailer-container iframe {
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .movie {
+        max-width: 230px;
+    }
+
+    .trailer-container iframe {
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie {
+        max-width: 200px;
+    }
+
+    .trailer-container iframe {
+        height: 120px;
+    }
+}
+
