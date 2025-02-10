@@ -1,5 +1,5 @@
-const API_KEY_OMDB = CONFIG.API_KEY_OMDB; 
-const API_KEY_TMDB = CONFIG.API_KEY_TMDB;
+const API_KEY_OMDB = '8b9773fd'; 
+const API_KEY_TMDB = '487df02639957e246b25f34c337a8375';
 
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
