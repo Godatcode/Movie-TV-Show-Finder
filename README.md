@@ -41,20 +41,6 @@ git clone https://github.com/your-username/movie-finder.git
 cd movie-finder
 ```
 
-### 2️⃣ Create `config.js` File (For API Keys)
-Since API keys are sensitive, **DO NOT** push them to GitHub. Instead, create a `config.js` file inside your project and add the following:
-```js
-const API_KEY_OMDB = 'YOUR_OMDB_API_KEY';
-const API_KEY_TMDB = 'YOUR_TMDB_API_KEY';
-```
-> 🛑 **Note:** Replace `'YOUR_OMDB_API_KEY'` and `'YOUR_TMDB_API_KEY'` with your actual API keys.
-
-### 3️⃣ Add `.gitignore` (To Hide API Keys)
-Create a `.gitignore` file and add the following line to **prevent uploading sensitive keys**:
-```
-config.js
-```
-
 ### 4️⃣ Run the Project Locally
 Simply open `index.html` in your browser.
 
@@ -81,14 +67,6 @@ You can deploy the project using **GitHub Pages**, **Netlify**, or **Vercel**.
 4. **Use Voice Search** → Enables speech recognition for search.
 5. **Toggle Dark Mode** → Switches between light & dark theme.
 6. **Surprise Me!** → Shows a random movie recommendation.
-
----
-
-## 🔐 Security & API Key Management
-To **secure API keys**, follow these steps:
-- **Never expose API keys in public repositories.**
-- **Use `.gitignore`** to prevent `config.js` from being uploaded.
-- **Use environment variables** if hosting on a backend server.
 
 ---
 
