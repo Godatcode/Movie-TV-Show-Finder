@@ -60,6 +60,13 @@ You can deploy the project using **GitHub Pages**, **Netlify**, or **Vercel**.
 ## 🚀Live Demo
 [Movie-TV-Show Finder](https://godatcode.github.io/Movie-TV-Show-Finder/)
 
+---
+
+## 🔗At A Glance 
+<img width="1919" alt="Screenshot 2025-02-13 at 12 10 48 AM" src="https://github.com/user-attachments/assets/77a7b0b6-6263-4716-afb8-0a23f748ef11" />
+
+
+
 ## 🎯 How It Works
 1. **Search for a movie** → Fetches movie info from OMDB API.
 2. **Click on a result** → Fetches trailer & streaming info using TMDB API.
